@@ -1,0 +1,38 @@
+.home_block{
+    padding: 29px 33px;
+    background: url("/images/article_image.png") center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 50px;
+    .home_content{
+        padding: 44px 32px;
+        background: $white;
+        flex: 0 0 400px;
+        h1{
+            font-family: $font-main;
+            font-weight: $Bold;
+            font-size: 33px;
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+    }
+}
+.articles{
+    max-width: 812px;
+    margin: 0 auto;
+    .article_item{
+        display: flex;
+        margin-bottom: 50px;
+    }
+    h2{
+        font-family: $font-main;
+        font-weight: $Bold;
+        font-size: 33px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+    .article_desk{
+        margin-left: 35px;
+    }
+}
