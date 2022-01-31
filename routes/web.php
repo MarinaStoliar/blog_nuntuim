@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\PostController;
+use App\Http\Controllers\ArticleController;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -21,26 +21,11 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/', [BlogController::class, 'index']);
 
+Route::post('/article', [ArticleController::class, 'store'])->name('article');
 
-
-
-
-//Route::get('/', function () {
-//    return view('pages.index');
-//});
-
-//Route::get('/header', [BlogController::class, 'creating']);
-//
-//
-//Auth::routes();
-//
-//Route::get('/', [HomeController::class, 'welcome'])->name('home');
-//
-//
-Route::get('/', [BlogController::class, 'index']);
-//Route::get('/category/{slug}', [BlogController::class, 'getPostsByCategory'])->name('getPostsByCategory');
-//Route::get('/category/{slug_category}/{slug_post}', [BlogController::class, 'getPost'])->name('getPost');
-
+Route::get('/article/{id?}', function ($name = null) {
+    return $name;
+});
 
 
 
