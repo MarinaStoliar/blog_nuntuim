@@ -67,42 +67,57 @@ p {
 .header .header_search {
   margin: 0 47px 0 auto;
 }
-.home_block {
-  padding: 29px 33px;
-  background: url("/images/article_image.png") center no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: end;
-  margin-bottom: 50px;
+.articles {
+  margin: 0 auto;
 }
-.home_block .home_content {
+.articles .article_item {
+  max-width: 812px;
+  display: flex;
+  position: relative;
+  margin: 0 auto 50px;
+  text-decoration: none;
+  color: inherit;
+}
+.articles .article_item img {
+  max-width: 237px;
+  max-height: 177px;
+}
+.articles .article_item .article_desk {
+  margin-left: 35px;
+  position: relative;
+}
+.articles .article_item .article_desk h2 {
+  font-family: "Libre Baskerville";
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.articles .article_item:nth-child(1) {
+  max-width: 1000px;
+  padding: 29px 33px;
+  justify-content: end;
+}
+.articles .article_item:nth-child(1) img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  max-width: inherit;
+  max-height: inherit;
+  height: 100%;
+  width: 100%;
+}
+.articles .article_item:nth-child(1) .article_desk {
   padding: 44px 32px;
   background: #FFFFFF;
   flex: 0 0 400px;
 }
-.home_block .home_content h1 {
+.articles .article_item:nth-child(1) .article_desk h2 {
   font-family: "Libre Baskerville";
   font-weight: 700;
   font-size: 33px;
   line-height: 1.2;
   margin-bottom: 8px;
-}
-
-.articles {
-  max-width: 812px;
-  margin: 0 auto;
-}
-.articles .article_item {
-  display: flex;
-  margin-bottom: 50px;
-}
-.articles h2 {
-  font-family: "Libre Baskerville";
-  font-weight: 700;
-  font-size: 33px;
-  line-height: 1.2;
-  margin-bottom: 8px;
-}
-.articles .article_desk {
-  margin-left: 35px;
 }

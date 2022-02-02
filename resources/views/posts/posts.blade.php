@@ -1,8 +1,8 @@
 <form action="{{route('article')}}" method="post" enctype="multipart/form-data">
     @csrf
     <div class="form-group">
-        <label for="categories">Категорія</label>
-        <input type="text" name="categories" placeholder="" id="categories" class="form-control">
+        <label for="category">Категорія</label>
+        <input type="text" name="category" placeholder="" id="category" class="form-control">
     </div>
     <div class="form-group">
         <label for="title">Заголовок</label>

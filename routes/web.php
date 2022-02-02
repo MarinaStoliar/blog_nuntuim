@@ -20,16 +20,11 @@ use Illuminate\Support\Facades\Auth;
 
 
 Route::get('/', [BlogController::class, 'index']);
+Route::get('/forma', [ArticleController::class, 'blog']);
 
 Route::post('/article', [ArticleController::class, 'store'])->name('article');
 
-Route::get('/article/{id?}', function ($name = null) {
-    return $name;
-});
-
-
-
-
+Route::get('/article/{id}', [BlogController::class, 'article']);
 
 
 
