@@ -14,14 +14,26 @@ class BlogController extends Controller
         return view('pages.index', [
             'articles' => $articles
         ]);
-    }
-
-
-    public function article($id)
+}
+    public function show($id)
     {
-        $articles = Article::where('id', $id)->first();
+        $article = Article::find($id);
         return view('posts.show-article', [
-            'article' => $articles
+            'article' => $article
     ]);
     }
+
+    public function home()
+    {
+        return view("pages.home");
+    }
+    public function tags()
+    {
+        return view("pages.tags");
+    }
+    public function about()
+    {
+        return view("pages.about");
+    }
+
 }

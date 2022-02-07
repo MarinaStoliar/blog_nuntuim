@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -10,24 +11,27 @@
 </head>
 
 <body>
-<header class="header">
-    @section('header')
-            <a href="#" class="logo"><img src="{{asset('images/logo.svg')}}" alt="Logo"></a>
+<div class="content_app">
+    <header class="header">
+        @section('header')
+            <a href="{{route('home')}}" class="logo"><img src="{{asset('images/logo.svg')}}" alt="Logo"></a>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Tags</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="{{route('home')}}">Home</a></li>
+                <li><a href="{{route('tags')}}">Tags</a></li>
+                <li><a href="{{route('about')}}">About</a></li>
             </ul>
-            <a href="#" class="header_search">
+            <a href="{{route('home')}}" class="header_search">
                 <img src="{{asset('images/search.svg')}}" alt="">
             </a>
-            <a href="#" class="header_call">
+            <a href="{{route('home')}}" class="header_call">
                 <img src="{{asset('images/call.svg')}}" alt="">
             </a>
-    @show
-</header>
+
+        @show
+    </header>
 
     @yield('content')
+</div>
 </body>
 
 </html>

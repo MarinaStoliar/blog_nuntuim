@@ -1,32 +1,28 @@
-.articles{
+.articles {
     margin: 0 auto;
-    .article_item{
+
+    .article_item {
         max-width: 812px;
         display: flex;
         position: relative;
         margin: 0 auto 50px;
-        text-decoration: none;
-        color: inherit;
-        img{
+
+        img {
             max-width: 237px;
             max-height: 177px;
         }
-        .article_desk{
+
+        .article_desk {
             margin-left: 35px;
             position: relative;
-            h2{
-                font-family: $font-main;
-                font-weight: $Bold;
-                font-size: 33px;
-                line-height: 1.2;
-                margin-bottom: 8px;
-            }
         }
-        &:nth-child(1){
+
+        &:nth-child(1) {
             max-width: 1000px;
             padding: 29px 33px;
             justify-content: end;
-            img{
+
+            img {
                 position: absolute;
                 top: 0;
                 right: 0;
@@ -37,17 +33,11 @@
                 height: 100%;
                 width: 100%;
             }
-            .article_desk{
+
+            .article_desk {
                 padding: 44px 32px;
                 background: $white;
                 flex: 0 0 400px;
-                h2{
-                    font-family: $font-main;
-                    font-weight: $Bold;
-                    font-size: 33px;
-                    line-height: 1.2;
-                    margin-bottom: 8px;
-                }
             }
         }
     }

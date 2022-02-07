@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .container {
@@ -40,10 +41,26 @@ p {
   line-height: 1.5;
 }
 
+h2 {
+  font-family: "Libre Baskerville";
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
 .header {
   display: flex;
   align-items: center;
-  padding: 30px 25px;
+  padding: 30px 0;
 }
 .header .logo {
   max-width: 192px;
@@ -67,6 +84,7 @@ p {
 .header .header_search {
   margin: 0 47px 0 auto;
 }
+
 .articles {
   margin: 0 auto;
 }
@@ -75,8 +93,6 @@ p {
   display: flex;
   position: relative;
   margin: 0 auto 50px;
-  text-decoration: none;
-  color: inherit;
 }
 .articles .article_item img {
   max-width: 237px;
@@ -85,13 +101,6 @@ p {
 .articles .article_item .article_desk {
   margin-left: 35px;
   position: relative;
-}
-.articles .article_item .article_desk h2 {
-  font-family: "Libre Baskerville";
-  font-weight: 700;
-  font-size: 33px;
-  line-height: 1.2;
-  margin-bottom: 8px;
 }
 .articles .article_item:nth-child(1) {
   max-width: 1000px;
@@ -114,10 +123,60 @@ p {
   background: #FFFFFF;
   flex: 0 0 400px;
 }
-.articles .article_item:nth-child(1) .article_desk h2 {
+
+.content_app {
+  margin: 0 auto;
+  max-width: 1316px;
+}
+
+.container_show img {
+  max-height: 592px;
+  width: 100%;
+  margin-bottom: 54px;
+}
+.container_show h2 {
   font-family: "Libre Baskerville";
   font-weight: 700;
-  font-size: 33px;
+  font-size: 42px;
   line-height: 1.2;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
+  color: #000000;
+  text-align: center;
+}
+.container_show .author_data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container_show .author_data p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #1C1C1C80;
+}
+.container_show .author_data #circle {
+  width: 5px;
+  height: 5px;
+  border-radius: 25px;
+  background: #1C1C1C80;
+  margin: 0 10px;
+}
+.container_show .hashtag {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container_show .hashtag p {
+  color: #1C1C1C80;
+  margin: 0 5px;
+}
+.container_show span {
+  max-width: 650px;
+  display: block;
+  margin: 26px auto 0;
 }
